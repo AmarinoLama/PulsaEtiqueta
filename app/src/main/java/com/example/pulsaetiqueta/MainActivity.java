@@ -12,6 +12,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     TextView tvRespuesta;
 
+    Integer rotation = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,8 +26,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View view) {
+        rotation += 45;
         tvRespuesta.setText("hola");
-        tvRespuesta.setRotation(45);
+        tvRespuesta.setRotation(rotation);
         tvRespuesta.setTextSize(40);
         tvRespuesta.setTextColor(Color.RED);
         tvRespuesta.setBackgroundColor(Color.YELLOW);
