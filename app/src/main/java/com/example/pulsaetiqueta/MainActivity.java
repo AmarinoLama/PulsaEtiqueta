@@ -1,5 +1,6 @@
 package com.example.pulsaetiqueta;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -25,5 +26,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         tvRespuesta.setText("hola");
         tvRespuesta.setRotation(45);
+        tvRespuesta.setTextSize(40);
+        tvRespuesta.setTextColor(Color.RED);
+        tvRespuesta.setBackgroundColor(Color.YELLOW);
     }
 }
