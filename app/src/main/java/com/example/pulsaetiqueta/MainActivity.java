@@ -1,10 +1,14 @@
 package com.example.pulsaetiqueta;
 
+import static com.example.pulsaetiqueta.R.*;
+
+import android.annotation.SuppressLint;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -28,6 +32,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View view) {
+        if (rotation == 360) {
+            rotation = 0;
+        }
         rotation += 45;
         tvRespuesta.setText("hola");
         tvRespuesta.setRotation(rotation);
